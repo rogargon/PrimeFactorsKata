@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeFactors {
-    public List generate(int number) {
-        ArrayList primes = new ArrayList<Integer>();
+    public List<Integer> generate(int number) {
+        ArrayList<Integer> primes = new ArrayList<>();
         if(number == 1) return primes;
         int i = number;
         int factor = 2;
@@ -16,7 +16,6 @@ public class PrimeFactors {
             }
             factor++;
         }
-
         return primes;
     }
 }
